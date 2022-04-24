@@ -7,12 +7,14 @@ const onSubmit = (event) => {
     event.currentTarget.elements.email.value &&
     event.currentTarget.elements.password.value !== ""
   ) {
+    // --------- вариант №1 -----
     // const email = event.currentTarget.elements.email.value;
     // const password = event.currentTarget.elements.password.value;
 
     // const objData = { email, password };
     // console.log(objData);
 
+    // ------------ вариант №2 ------------
     const formData = new FormData(event.currentTarget);
     console.log(formData);
 
