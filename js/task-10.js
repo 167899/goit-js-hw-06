@@ -29,6 +29,7 @@ const createBoxes = (amount) => {
 };
 
 const destroyBoxes = () => {
+  divInput.value = 1;
   return (divBoxes.innerHTML = "");
 };
 
